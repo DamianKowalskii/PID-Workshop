@@ -3,6 +3,7 @@ QT       += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 CONFIG += c++17 -Wall -Wextra
+QMAKE_CXXFLAGS += -Wa,-mbig-obj
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -18,7 +19,6 @@ SOURCES += \
     src/model/pid.cpp
 
 HEADERS += \
-    include/NumCpp/NumCpp.hpp \
     include/model/autotuning/autotuner.h \
     include/model/autotuning/autotuning_config.h \
     include/model/autotuning/population.h \
@@ -34,8 +34,7 @@ HEADERS += \
 INCLUDEPATH += \
     include/model/autotuning \
      include/model \
-     include/view \
-     include/NumCpp
+     include/view
 FORMS += \
     mainwindow.ui
 
