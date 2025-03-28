@@ -30,7 +30,6 @@ A Qt-based educational application for visualizing and experimenting with PID co
 The project requires:
 - Qt framework
 - C++ compiler with C++11 support
-- NumCpp library
 
 ## Usage
 
