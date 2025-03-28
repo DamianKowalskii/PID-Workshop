@@ -1,5 +1,47 @@
-# PID-Workshop
-Program for visualising the process of PID tuning and its impact on the controlled plant. Written in Qt framework and C++ language. A car model has been used as a plant, with a cruise control system to adjust in order to maintain a set speed. The program implements a method of automatic selection of PID values by using a metaheuristic method: compact genetic algorithm. 
+# PID Workshop
 
+A Qt-based educational application for visualizing and experimenting with PID controller tuning. The program uses a car model with cruise control as an example system to demonstrate how PID parameters affect controlled system behavior.
 
-![](pid_workshop.png)
+![PID Workshop Screenshot](pid_workshop.png)
+
+## Features
+
+- Real-time visualization of:
+  - System output (vehicle velocity)
+  - Setpoint tracking
+  - Control signal (PID controller output)
+- Interactive PID parameter adjustment:
+  - Proportional gain (Kp)
+  - Integral gain (Ki) 
+  - Derivative gain (Kd)
+- Anti-windup control option
+- Automatic PID tuning using compact genetic algorithm
+- Configurable simulation time step
+
+## Implementation Details
+
+- Built with Qt and C++
+- Uses QCustomPlot for real-time data visualization
+- Implements car dynamics model as the controlled plant
+- Features an autotuning algorithm based on metaheuristic optimization
+
+## Building
+
+The project requires:
+- Qt framework
+- C++ compiler with C++11 support
+- NumCpp library
+
+## Usage
+
+1. Launch the application
+2. Adjust PID parameters using the spinboxes
+3. Set target velocity (setpoint)
+4. Click "Start" to begin simulation
+5. Observe system response in real-time plots
+6. Use "Stop" and "Restart" to control simulation
+7. Try "Start autotuning" for automated parameter optimization
+
+## License
+
+This project is released under the MIT License. See LICENSE file for details.
